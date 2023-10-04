@@ -1,6 +1,5 @@
 package org.example;
 
-
 import java.io.IOException;
 import java.net.*;
 
@@ -13,7 +12,6 @@ public class UDPClient {
         socket = new DatagramSocket();
         address = InetAddress.getByName("10.57.37.183");
     }
-
 
     public String sendEcho(String msg) throws IOException {
             buf = msg.getBytes();
